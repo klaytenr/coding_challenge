@@ -1,0 +1,144 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#container{
+    width: 99.8vw;
+    height: 92.3vw;
+    border: solid black .1vw;
+}
+#header{
+    width: 99.8vw;
+    height: 10vw;
+}
+#body{
+    width: 99.8vw;
+    height: 80vw;
+}
+h1{
+    text-align: center;
+    font-size: 2.5vw;
+}
+#mainPicture{
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#mainOverview{
+    margin-top: 2vw;
+    width: 80%;
+}
+.pictures{
+    width: 22%;
+}
+#show{
+    border-radius: .3vw;
+    box-shadow: 0 .1vw .1vw rgba(0,0,0,.4) inset, 0 .1vw 0 rgba(255,255,255,.2);
+    margin: 1.5vw 0 0 40vw;
+    padding: 1vw 3vw;
+    height: .8vw;
+    width: 10vw;
+    font-size: 2vw;
+}
+#search{
+    padding: 1vw 0 1.6vw 0;
+    border-radius: .3vw;
+    box-shadow: 0 0.1vw 0.1vw rgba(0,0,0,.4) inset, 0 0.1vw 0 rgba(255,255,255,.2);
+    background-color: green;
+    color: white;
+    height: 3.1vw;
+    width: 5vw;
+    font-size: 1.2vw;
+}
+#searchButton{
+    border: none;
+}
+#right {
+    display: inline-block;
+    height: 19.8vw;
+    width: 40.05vw;
+    vertical-align: top;
+}
+#left {
+    display: inline-block;
+    height: 19.8vw;
+    width: 58.5vw;
+    vertical-align: top;
+}
+#whole{
+    height: 19.8vw;
+    width: 99.8vw;
+}
+#episodes{
+    height: 60vw;
+    width: 64.8vw;
+    display: inline-block;
+}
+#episode1, #episode2, #episode3 {
+    height: 20vw;
+    width: 98.8vw;
+}
+p{
+    width: 60%;
+    text-align: center;
+    margin-left: 3vw;
+    display: inline-block;
+    font-size: 2vw;
+    vertical-align: top;
+}
+ul{
+    height: 6vw;
+    width: 12vw;
+    border: .1vw solid black;
+    overflow: scroll;
+    text-align: center;
+    font-size: .8vw;
+}
+li{
+    background-color: aqua;
+    padding: .1vw 2vw;
+    text-align: center;
+    cursor: pointer;
+}
+li:hover {
+    background-color: lime;
+    border: .1vw solid black;
+}
+#right, #episode1, #episode2, #episode3 {
+    overflow: scroll;
+}
+h2{
+    font-size: 2vw;
+}
+h3{
+    font-size: 1.6vw;
+}
+footer{
+    width: 98.8vw;
+    height: 35vw;
+    text-align: center;
+}
+#imdb{
+    padding-left: 50vw;
+    margin-top: 5vw;
+    font-size: 2vw;
+}
+@media screen and (max-width: 500px) {
+    #search {
+        padding: 1.3vw 0;
+        border-radius: .3vw;
+        box-shadow: 0 0.1vw 0.1vw rgba(0,0,0,.4) inset, 0 0.1vw 0 rgba(255,255,255,.2);
+        background-color: green;
+        color: white;
+        height: 3.8vw;
+        width: 5vw;
+        font-size: 1vw;
+    }
+    #header, #body{
+        width: 99vw;
+    }
+    #container{
+        height: 94.3vw;
+    }
+
+}
