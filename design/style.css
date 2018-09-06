@@ -14,7 +14,7 @@
 }
 #body{
     width: 99.8vw;
-    height: 80vw;
+    height: 83vw;
 }
 h1{
     text-align: center;
@@ -62,11 +62,11 @@ h1{
 #left {
     display: inline-block;
     height: 19.8vw;
-    width: 58.5vw;
+    width: 58.3vw;
     vertical-align: top;
 }
 #whole{
-    height: 19.8vw;
+    height: 22.8vw;
     width: 99.8vw;
 }
 #episodes{
@@ -119,20 +119,87 @@ footer{
     text-align: center;
 }
 #imdb{
-    padding-left: 50vw;
     margin-top: 5vw;
     font-size: 2vw;
 }
+.ui-helper-hidden-accessible {
+    visibility: hidden;
+}
+#footer{
+    text-align: center;
+    width: 99vw;
+}
+
+
+
 @media screen and (max-width: 500px) {
+    #container{
+        border: none;
+        height: 500vw;
+    }
+    #body{
+        height: 340vw;
+    }
+    #title{
+        height: 27vw;
+        line-height: 27vw;
+        text-align: center;
+    }
+    #show{
+        height: 18vw;
+        width: 62vw;
+        padding: 1vw;
+        font-size: 8vw;
+        margin: 4vw 0 0 4vw;
+    }
+    input{
+        vertical-align: top;
+    }
+    #searchButton{
+        background-color: white;
+    }
+    #header{
+        height: 26vw;
+    }
+    #whole{
+        height: 90vw;
+    }
+    h1{
+        font-size: 8vw;
+        width: 90%;
+        vertical-align: middle;
+        line-height: normal;
+        display: inline-block;
+    }
+    #left{
+        width: 99vw;
+        height: 27vw;
+    }
+    #network{
+        font-size: 4vw;
+        margin-top: 12vw;
+    }
+    #mainOverview{
+        font-size: 4vw;
+        width: 90%;
+    }
+    #mainPicture{
+        padding-top: 5vw;
+    }
+    #right{
+        width: 75vw;
+        height: 30vw;
+        margin-left: 20vw;
+    }
     #search {
-        padding: 1.3vw 0;
+        margin-top: 3vw;
         border-radius: .3vw;
         box-shadow: 0 0.1vw 0.1vw rgba(0,0,0,.4) inset, 0 0.1vw 0 rgba(255,255,255,.2);
         background-color: green;
         color: white;
-        height: 3.8vw;
-        width: 5vw;
-        font-size: 1vw;
+        height: 21vw;
+        width: 25vw;
+        font-size: 5vw;
     }
     #header, #body{
         width: 99vw;
@@ -140,5 +207,25 @@ footer{
     #container{
         height: 94.3vw;
     }
-
+    #episode1, #episode2, #episode3{
+        height: 80vw;
+        text-align: center;
+        margin: 2vw 0;
+    }
+    .pictures{
+        width: 85%;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    p{
+        font-size: 3.5vw;
+        width: 75%;
+    }
+    #imdb{
+        font-size: 5vw;
+    }
+    #footer{
+        height: 10vw;
+    }
 }

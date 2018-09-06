@@ -1,6 +1,6 @@
 <?php 
 // required here to use functions throughout
-require ('functions.php'); 
+require_once ('functions.php'); 
 
 // needed for .env file
 require_once __DIR__ . '/vendor/autoload.php';

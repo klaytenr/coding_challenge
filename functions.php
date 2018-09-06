@@ -124,20 +124,20 @@
         $episode1overview = $data['episode_data']['data'][0]['overview'];
         $episode2overview = $data['episode_data']['data'][1]['overview'];
         $episode3overview = $data['episode_data']['data'][2]['overview'];
-        $name = str_replace("'", "\'", $name);
-        $network = str_replace("'", "\'", $network);
-        $showOverview = str_replace("'", "\'", $showOverview);
-        $showBanner = str_replace("'", "\'", $showBanner);
-        $imdb = str_replace("'", "\'", $imdb);
-        $episode1name = str_replace("'", "\'", $episode1name);
-        $episode2name = str_replace("'", "\'", $episode2name);
-        $episode3name = str_replace("'", "\'", $episode3name);
-        $episode1fileName = str_replace("'", "\'", $episode1fileName);
-        $episode2fileName = str_replace("'", "\'", $episode2fileName);
-        $episode3fileName = str_replace("'", "\'", $episode3fileName);
-        $episode1overview = str_replace("'", "\'", $episode1overview);
-        $episode2overview = str_replace("'", "\'", $episode2overview);
-        $episode3overview = str_replace("'", "\'", $episode3overview);
+        $name = $connection->real_escape_string($name);
+        $network = $connection->real_escape_string($network);
+        $showOverview = $connection->real_escape_string($showOverview);
+        $showBanner = $connection->real_escape_string($showBanner);
+        $imdb = $connection->real_escape_string($imdb);
+        $episode1name = $connection->real_escape_string($episode1name);
+        $episode2name = $connection->real_escape_string($episode2name);
+        $episode3name = $connection->real_escape_string($episode3name);
+        $episode1fileName = $connection->real_escape_string($episode1fileName);
+        $episode2fileName = $connection->real_escape_string($episode2fileName);
+        $episode3fileName = $connection->real_escape_string($episode3fileName);
+        $episode1overview = $connection->real_escape_string($episode1overview);
+        $episode2overview = $connection->real_escape_string($episode2overview);
+        $episode3overview = $connection->real_escape_string($episode3overview);
 
         // query to add show to database
         $sql = "INSERT INTO Shows (id, seriesName, overview, network, banner, imdbId, 

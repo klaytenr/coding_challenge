@@ -1,10 +1,10 @@
-change .env.example to .env
-fill out .env file with sensitive information
+// change .env.example to .env
+// fill out .env file with sensitive information
 
-install phpdotenv via composer 
-    composer require --dev phpdotenv
+// install phpdotenv via composer 
+    curl -s http://getcomposer.org/installer | php
     php composer.phar require vlucas/phpdotenv
 
-create database called 'Shows'
+// create database called 'Shows'
 
-run create_table.sql to create the table needed.
+// run create_table.sql to create the table needed.

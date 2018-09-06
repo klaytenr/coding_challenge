@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coding Challenge</title>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="js.js"></script>
+    <script src="design/js.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="design/style.css">
 </head>
 <body>
     <div id="container">
@@ -22,6 +22,9 @@
         <input type="hidden" id="hidden" value="<?= $hidden ?>">
         <div id="body">
             <div id="whole">
+                <div id="title">
+                    
+                </div>
                 <div id="left">
 
                 </div>

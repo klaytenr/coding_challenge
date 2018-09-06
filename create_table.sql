@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS `shows`.`Shows`;
 -- table creation
 CREATE TABLE `shows`.`Shows` (
     `id` INT NULL,
-    `seriesName` VARCHAR(45),
+    `seriesName` VARCHAR(60),
     `overview` TEXT(500) NULL,
     `network` VARCHAR(45),
     `banner` VARCHAR(45),

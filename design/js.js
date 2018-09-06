@@ -20,7 +20,7 @@ $(document).ready(function(){
             $.ajax({
                 dataType: "json",
                 type : 'Get',
-                url: 'controller.php/?shows='+query,
+                url: 'controller.php?shows='+query,
                 success: function(data) {
                     response($.map( data, function(item) {
                         // add just names to html
@@ -48,7 +48,7 @@ $(document).ready(function(){
         // starts the request for the show data
         $.ajax({
             type:"GET",
-            url:"controller.php/?show="+$("#show").val(),
+            url:"controller.php?show="+$("#show").val(),
             error: function() {
             },
             success:function (data) {
@@ -59,6 +59,8 @@ $(document).ready(function(){
                 $("#episode1").html('');
                 $("#episode2").html('');
                 $("#episode3").html('');
+                $("#title").html('');
+                $("#footer").html('');
                 // makes JSON readable as js
                 var string = JSON.parse(data);
                 console.log(string);
@@ -69,7 +71,7 @@ $(document).ready(function(){
                 var description = "<p id='mainOverview'>" + string.overview + "</p>";
                 var imdb = "<a id='imdb' href='https://www.imdb.com/title/" + string.imdbId + "/?ref_=inth_ov_tt'>IMDB" + "</a>";
                 // appending data
-                $("#left").append(title);
+                $("#title").append(title);
                 $("#left").append(image);
                 $("#left").append(network);
                 $("#right").append(description);
