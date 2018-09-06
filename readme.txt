@@ -3,6 +3,7 @@ fill out .env file with sensitive information
 
 install phpdotenv via composer 
     composer require --dev phpdotenv
+    php composer.phar require vlucas/phpdotenv
 
 create database called 'Shows'
 
